@@ -1,0 +1,94 @@
+.staff {
+    padding: 114px 0 114px 0;
+}
+.container {
+}
+.staff__wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.staff__card {
+    width: 260px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+.staff__img {
+    width: 260px;
+    height: 260px;
+    margin: auto;
+    margin-bottom: 30px;
+
+    .staff__img img{
+        width: 100%;
+        height: 100%;
+        object-fit: none;
+        object-position: center;
+    }
+}
+.staff__name {
+    .staff__name-item{
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        align-items: center;
+        text-transform: capitalize;
+        color: $_black;
+        margin-bottom: 6px;
+    }
+    .staff__name-post{
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        align-items: center;
+        text-transform: uppercase;
+        color: $_red;
+        margin-bottom: 20px;
+
+    }
+}
+
+.staff__text {
+    @include text_fu;
+    margin-bottom: 40px;
+}
+.staff__sicial {
+
+}
+.icons {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    
+}
+.fa-brands {
+
+    list-style-type: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.icons li .fa-brands{
+    transition: 0.8s;   
+}
+
+.icons li .fa-brands:hover {
+    transform: rotate(360deg) scale(1.5);
+    
+}
+
+.fa-facebook-f:hover{
+    color: rgb(65, 129, 238);
+}
+
+.fa-viber:hover{
+    color: #675DA9;
+}
+
+.fa-twitter:hover{
+    color: #1da1f2;
+}

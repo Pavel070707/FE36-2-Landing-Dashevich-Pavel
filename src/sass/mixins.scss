@@ -1,0 +1,22 @@
+@mixin text_fu {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: $_grey;
+    
+    
+}
+ 
+@mixin main_title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: $_white;
+    
+}
+

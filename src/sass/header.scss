@@ -1,0 +1,123 @@
+.header {
+    background-image: url(../img/back__img.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+
+    &::after{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #252B49;
+        opacity: 0.8;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 1;
+
+    }
+}
+
+
+.container {
+    z-index: 2;
+}
+.header__wrap {
+    padding: 36px 0 120px 0;
+
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 135px;
+    &::after{
+        content: '';
+        display: inline-block;
+        border-bottom: 1px solid $_grey;
+        width: 1170px;
+    }
+}
+.logo {
+}
+.navigation {
+    
+}
+.navigation__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navigation__list-item {
+    width: 134px;
+    height: 85px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $_white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid $_black;
+    width: 134px; 
+    transition: 0.3s;
+    &:hover{
+        width: 134px;
+        border-bottom: 3px solid #BABBC5;
+    }
+    &:active{
+        border-color: $_red2;
+        color:  $_red2;
+    }
+
+
+}
+.header__bottom {
+    text-align: center;
+    object-position: center;
+}
+.main__title {
+    @include main_title;
+    margin-bottom: 30px;
+
+
+}
+.header__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: $_white;
+    margin-bottom: 80px;
+    
+}
+.btn {
+    width: 370px;
+    height: 80px;
+    background-color: $_red;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $_white;
+    border: none;
+    transition: 0.3s;
+
+    &:hover{
+        background-color: $_red2;
+    }
+    &:active{
+        background-color: $_red;
+        box-shadow: 4px 4px 30px $_red;
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "fe36-2-landing-dashevich-pavel",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pavel070707/FE36-2-Landing-Dashevich-Pavel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pavel070707/FE36-2-Landing-Dashevich-Pavel/issues"
+  },
+  "homepage": "https://github.com/Pavel070707/FE36-2-Landing-Dashevich-Pavel#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  }
+}
